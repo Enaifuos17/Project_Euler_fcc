@@ -6,30 +6,31 @@
 
 <hr>
 <br>
+<br>
 
 ![1%](https://progress-bar.dev/1/?title=Done)
 
 #### Project Euler Problems 1 to 100
 
-<hr width="50%">
+<hr width="40%">
 
 ![0%](https://progress-bar.dev/0/?title=Done)
 
 #### Project Euler Problems 101 to 200
 
-<br>
+<hr width="40%">
 
 ![0%](https://progress-bar.dev/0/?title=Done)
 
 #### Project Euler Problems 201 to 300
 
-<br>
+<hr width="40%">
 
 ![0%](https://progress-bar.dev/0/?title=Done)
 
 #### Project Euler Problems 301 to 400
 
-<br>
+<hr width="40%">
 
 ![0%](https://progress-bar.dev/0/?title=Done)
 
