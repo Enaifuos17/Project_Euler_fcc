@@ -2,7 +2,7 @@
 
 ## The massive Project Euler archives. These will harden the algorithm and mathematics knowledge.
 
-## _Can I finish them all?_
+### _Can I finish them all?_
 
 - Project Euler Problems 1 to 100
 
