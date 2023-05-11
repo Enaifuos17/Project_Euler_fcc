@@ -18,16 +18,16 @@ console.log("----------------------");
 */
 
 function multiplesOf3and5(number) {
-  let result = [];
+  let multiples = [];
   for (let i = 1; i < number; i++) {
     if (i % 3 === 0 || i % 5 === 0) {
-      result.push(i);
+      multiples.push(i);
     }
   }
-  let answer = result.reduce((prev, next) => {
+  let result = multiples.reduce((prev, next) => {
     return prev + next;
   });
-  return answer;
+  return result;
 }
 
 console.log(multiplesOf3and5(10)); // 23
