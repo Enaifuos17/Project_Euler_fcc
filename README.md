@@ -4,11 +4,14 @@
 
 ### _Can I finish them all?_
 
+<hr>
+<br>
+
 ![1%](https://progress-bar.dev/1/?title=Done)
 
 #### Project Euler Problems 1 to 100
 
-<br>
+<hr width="50%">
 
 ![0%](https://progress-bar.dev/0/?title=Done)
 
@@ -16,11 +19,9 @@
 
 <br>
 
-<div>
-    - Project Euler Problems 201 to 300
-    &nbsp;
-    ![0%](https://progress-bar.dev/0/?title=Done)
-</div>
+![0%](https://progress-bar.dev/0/?title=Done)
+
+#### Project Euler Problems 201 to 300
 
 <br>
 
