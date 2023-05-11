@@ -16,9 +16,11 @@
 
 <br>
 
-![0%](https://progress-bar.dev/0/?title=Done)
-
-#### Project Euler Problems 201 to 300
+<div>
+    - Project Euler Problems 201 to 300
+    &nbsp;
+    ![0%](https://progress-bar.dev/0/?title=Done)
+</div>
 
 <br>
 
