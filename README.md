@@ -6,7 +6,7 @@
 
 - Project Euler Problems 1 to 100
 
-  ![1%](https://progress-bar.dev/1/?title=Done)
+  ![2%](https://progress-bar.dev/2/?title=Done)
 
 - Project Euler Problems 101 to 200
 
