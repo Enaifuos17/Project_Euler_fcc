@@ -242,3 +242,50 @@ console.log("----------------------");
 // * ------------------------------------------------------------
 console.log("----------------------");
 // * ------------------------------------------------------------
+
+/* 
+
+  * P5 - Smallest multiple
+
+  2520 is the smallest number that can be divided by each of 
+  the numbers from 1 to 10 without any remainder.
+
+  What is the smallest positive number that is 
+  evenly divisible by all of the numbers from 1 to n?
+
+*/
+
+function smallestMult(n) {
+  let range = [];
+  let test = false;
+  let multiple = [];
+  // get the range
+  for (let i = 1; i <= n; i++) {
+    range.push(i);
+  }
+  let smallestMult = 1;
+  // while true => (!test)
+  while (!test) {
+    for (let i = 0; i < range.length; i++) {
+      if (smallestMult % range[i] === 0) {
+        multiple.push("y");
+      }
+    }
+    //
+    if (multiple.length === range.length) {
+      test = true; // here the while will stop
+    } else {
+      multiple = multiple.splice(multiple.length); // empty the arr
+      smallestMult++; // increment
+    }
+  }
+  //
+  return smallestMult;
+}
+
+console.log(smallestMult(5)); // 60
+console.log(smallestMult(7)); // 420
+console.log(smallestMult(10)); // 2520
+console.log(smallestMult(13)); // 360360
+// console.log(smallestMult(20)); // 232792560
+// ! infinite loop
