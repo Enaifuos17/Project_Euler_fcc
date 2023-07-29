@@ -1,11 +1,11 @@
 /* 
 
-    * P10 - Summation of primes
+  * P10 - Summation of primes
 
-    The sum of the primes below 10 is:
-    2 + 3 + 5 + 7 = 17
+  The sum of the primes below 10 is:
+  2 + 3 + 5 + 7 = 17
 
-    Find the sum of all the primes below n
+  Find the sum of all the primes below n
 
 */
 
@@ -23,7 +23,6 @@ function primeSummation(n) {
   // check all the numbers below n using isPrime() func
   for (let i = 2; i < n; i++) {
     if (isPrime(i)) {
-      //   primesArr.push(i);
       sum += i;
     }
   }
