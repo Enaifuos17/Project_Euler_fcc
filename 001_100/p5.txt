@@ -1,0 +1,44 @@
+The code defines two functions: 
+lcm(a, b) and gcd(a, b), 
+which are used to calculate the least common multiple (LCM) and 
+greatest common divisor (GCD) of two numbers, respectively. 
+These functions will be used later in the smallestMult(n) function.
+
+The gcd(a, b) function uses the Euclidean recursive algorithm to find the GCD of two numbers. 
+The algorithm works as follows:
+
+a. If the second number (b) is equal to 0, 
+it means that the first number (a) is the GCD, 
+and the function returns a.
+
+b. Otherwise, it recursively calls itself with the arguments (b, a % b), 
+where % is the modulo operator, 
+which gives the remainder of the division of a by b. 
+This continues until b becomes 0.
+
+The lcm(a, b) function calculates the LCM of two numbers using the formula: 
+LCM(a, b) = (a * b) / GCD(a, b). 
+It calls the gcd(a, b) function to get the GCD of a and b and then uses it to compute the LCM.
+
+The smallestMult(n) function takes a single parameter n, 
+which represents the range of numbers from 1 to n. 
+The goal of this function is to find the smallest multiple, 
+that is evenly divisible by all numbers from 1 to n.
+
+The function initializes a variable maxLCM to 1. 
+This variable will be used to keep track of the maximum LCM found so far.
+
+It uses a loop to iterate through the numbers from 2 to n, inclusive. 
+It starts from 2 because the LCM of any number with 1 is itself, 
+so there's no need to calculate it.
+
+Inside the loop, for each number i, it updates the maxLCM by calling the lcm(maxLCM, i) function. 
+This ensures that maxLCM always contains the LCM of all numbers from 1 to i.
+
+After the loop finishes, the function returns the final value of maxLCM, 
+which represents the smallest multiple that is evenly divisible by all numbers from 1 to n.
+
+For example: 
+if you call smallestMult(10), 
+it will find the smallest multiple that is evenly divisible by all numbers from 1 to 10, 
+which is 2520.

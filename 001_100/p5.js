@@ -10,7 +10,8 @@
 
 */
 
-// * WHY ?? I DUNNO
+// * SOLUTION 1
+// ------------
 function smallestMult_0(n) {
   let range = [];
   let test = false;
@@ -48,8 +49,9 @@ console.log(smallestMult_0(13)); // 360360
 
 // -----------------------------------
 console.log("*".repeat(20));
-// * solution 2
 
+// * SOLUTION 2
+// ------------
 function smallestMult(n) {
   let range = [];
   let smallestMult = 1;
@@ -83,3 +85,36 @@ console.log(smallestMult(10)); // 2520
 console.log(smallestMult(13)); // 360360
 // console.log(smallestMult(20)); // 232792560
 // it takes time but it works
+
+// -----------------------------------
+console.log("*".repeat(20));
+
+// * SOLUTION 3
+// ------------
+
+//LCM of two numbers
+function lcm(a, b) {
+  return (a * b) / gcd(a, b);
+}
+
+//Euclidean recursive algorithm
+function gcd(a, b) {
+  if (b === 0) return a;
+  return gcd(b, a % b);
+}
+
+function smallestMult_last(n) {
+  let maxLCM = 1;
+
+  //Getting the LCM in the range
+  for (let i = 2; i <= n; i++) {
+    maxLCM = lcm(maxLCM, i);
+  }
+  return maxLCM;
+}
+
+console.log(smallestMult_last(5)); // 60
+console.log(smallestMult_last(7)); // 420
+console.log(smallestMult_last(10)); // 2520
+console.log(smallestMult_last(13)); // 360360
+console.log(smallestMult_last(20)); // 360360

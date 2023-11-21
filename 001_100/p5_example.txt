@@ -1,0 +1,75 @@
+* Step 1: Initialize variables 
+
+n = 5
+maxLCM = 1
+
+--------------------------------------------------------------------------------------------------
+
+* Step 2: Loop from 2 to n(5 in this case)
+
+// i = 2
+maxLCM = lcm(1, 2)
+
+// i = 3
+maxLCM = lcm(2, 3)
+
+// i = 4
+maxLCM = lcm(6, 4)
+
+// i = 5
+maxLCM = lcm(24, 5)
+
+--------------------------------------------------------------------------------------------------
+
+* Step 3: Calculate the LCM using the 'lcm' function
+
+// lcm(1, 2)
+a = 1, b = 2
+To calculate the LCM, we first need to find the GCD (Greatest Common Divisor).
+gcd(1, 2) => Since b (2) is not 0, we proceed to the next recursive step.
+gcd(2, 1) => Since b (1) is not 0, we proceed to the next recursive step.
+gcd(1, 0) => Now, b is 0, so the function returns a, which is 1.
+
+LCM = (a * b) / gcd(a, b) = (1 * 2) / 1 = 2
+
+--- --- --- 
+
+// lcm(2, 3)
+a = 2, b = 3
+gcd(2, 3) => Since b (3) is not 0, we proceed to the next recursive step.
+gcd(3, 2) => Since b (2) is not 0, we proceed to the next recursive step.
+gcd(2, 1) => Since b (1) is not 0, we proceed to the next recursive step.
+gcd(1, 0) => Now, b is 0, so the function returns a, which is 1.
+
+LCM = (a * b) / gcd(a, b) = (2 * 3) / 1 = 6
+
+--- --- ---
+
+// lcm(6, 4)
+a = 6, b = 4
+gcd(6, 4) => Since b (4) is not 0, we proceed to the next recursive step.
+gcd(4, 2) => Since b (2) is not 0, we proceed to the next recursive step.
+gcd(2, 0) => Now, b is 0, so the function returns a, which is 2.
+
+LCM = (a * b) / gcd(a, b) = (6 * 4) / 2 = 12
+
+--- --- ---
+
+// lcm(12, 5)
+a = 12, b = 5
+gcd(12, 5) => Since b (5) is not 0, we proceed to the next recursive step.
+gcd(5, 2) => Since b (2) is not 0, we proceed to the next recursive step.
+gcd(2, 1) => Since b (1) is not 0, we proceed to the next recursive step.
+gcd(1, 0) => Now, b is 0, so the function returns a, which is 1.
+
+LCM = (a * b) / gcd(a, b) = (12 * 5) / 1 = 60
+
+--------------------------------------------------------------------------------------------------
+
+* Step 4: Return the final result
+
+maxLCM = 60
+
+So, when n = 5, 
+the smallest multiple that is 
+evenly divisible by all numbers from 1 to 5 is => 60.
