@@ -84,7 +84,7 @@ console.log(smallestMult(7)); // 420
 console.log(smallestMult(10)); // 2520
 console.log(smallestMult(13)); // 360360
 // console.log(smallestMult(20)); // 232792560
-// it takes time but it works
+// ! it takes time but it works
 
 // -----------------------------------
 console.log("*".repeat(20));
@@ -118,3 +118,4 @@ console.log(smallestMult_last(7)); // 420
 console.log(smallestMult_last(10)); // 2520
 console.log(smallestMult_last(13)); // 360360
 console.log(smallestMult_last(20)); // 360360
+// ! not mine
